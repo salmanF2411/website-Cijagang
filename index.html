@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Website Resmi Desa Cijagang - Portal informasi desa yang transparan, informatif, dan melayani masyarakat. Temukan profil desa, layanan, berita, dan potensi desa.">
+    <meta name="keywords"
+        content="Desa Cijagang, Profil Desa, Pemerintahan Desa, Website Desa, Layanan Desa, Potensi Desa">
+    <meta name="author" content="KKN Desa Cijagang">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Desa Cijagang - Website Resmi">
+    <meta property="og:description"
+        content="Portal informasi Desa Cijagang yang transparan, informatif, dan melayani masyarakat.">
+    <meta property="og:type" content="website">
+    <title>Desa Cijagang — Website Resmi Desa</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo-desa.png">
+
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- AOS - Animate On Scroll -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- GLightbox -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ============================================
+         LOADING SCREEN
+    ============================================= -->
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="spinner-grow text-success" role="status">
+                <span class="visually-hidden">Memuat...</span>
+            </div>
+            <div class="spinner-grow text-success spinner-delay-1" role="status"></div>
+            <div class="spinner-grow text-success spinner-delay-2" role="status"></div>
+            <p class="mt-3 loading-text">Memuat Halaman...</p>
+        </div>
+    </div>
+
+    <!-- ============================================
+         NAVBAR
+    ============================================= -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html#home">
+                <img src="assets/images/logo-desa.png" alt="Logo Desa Cijagang" class="navbar-logo" width="42"
+                    height="42">
+                <div class="brand-text-wrapper ms-2">
+                    <span class="brand-text">Desa Cijagang</span>
+                    <small class="brand-subtitle d-none d-md-block">Kecamatan Cikalong Kulon</small>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-lg-3 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#tentang">Profil Desa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#pemerintahan">Pemerintahan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#potensi">Potensi Desa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#wisata">Wisata</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#oleh-oleh">Oleh-Oleh</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="index.html#berita">Berita</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="index.html#galeri">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION
+    ============================================= -->
+    <section id="home" class="hero-section">
+        <div class="hero-slideshow" id="heroSlideshow">
+            <div class="hero-slide active"
+                data-bg="assets/images/walpaper05.jpeg">
+            </div>
+            <div class="hero-slide active"
+                data-bg="assets/images/walpaper04.jpeg">
+            </div>
+        </div>
+        <div class="hero-slide"
+            data-bg="assets/images/walpaper1.jpeg">
+        </div>
+        <div class="hero-slide"
+            data-bg="assets/images/desa.jpeg">
+        </div>
+        <div class="hero-slide"
+            data-bg="assets/images/walpaper2.jpeg">
+        </div>
+        <div class="hero-slide"
+            data-bg="assets/images/walpaper03.jpeg">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+            <span class="hero-badge">🏡 Selamat Datang di</span>
+            <h1 class="hero-title">Desa Cijagang</h1>
+            <p class="hero-subtitle">Transparan &bull; Informatif &bull; Melayani Masyarakat</p>
+            <div class="hero-buttons mt-4 d-flex justify-content-center">
+                <a href="#tentang" class="btn btn-hero-primary">
+                    <i class="fas fa-compass me-2"></i>Jelajahi Desa
+                </a>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll ke bawah</p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         WIDGET CUACA & JAM
+    ============================================= -->
+    <section id="widget-bar" class="widget-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-6">
+                    <div class="widget-item">
+                        <i class="fas fa-clock me-2"></i>
+                        <span id="liveTime">--:--:--</span>
+                        <small class="ms-2 text-muted">WIB</small>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="widget-item">
+                        <i class="fas fa-calendar-alt me-2"></i>
+                        <span id="liveDate">-- --- ----</span>
+                    </div>
+                </div>
+                <div class="col-md-4 text-md-end d-none d-md-block">
+                    <div class="widget-item">
+                        <i class="fas fa-cloud-sun me-2"></i>
+                        <span id="weatherInfo">Cuaca Cerah, 28°C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         STATISTIK DESA
+    ============================================= -->
+    <section id="statistik" class="section-padding bg-light">
+        <div class="container">
+            <div class="row g-3 g-lg-4 justify-content-center">
+                <div class="col-lg col-md-4 col-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <h3 class="stat-number counter" data-target="7000">0</h3>
+                        <p class="stat-label">Jumlah Penduduk</p>
+                    </div>
+                </div>
+                <div class="col-lg col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-home"></i></div>
+                        <h3 class="stat-number counter" data-target="1245">0</h3>
+                        <p class="stat-label">Kepala Keluarga</p>
+                    </div>
+                </div>
+                <div class="col-lg col-md-4 col-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-map-marked-alt"></i></div>
+                        <h3 class="stat-number counter" data-target="3">0</h3>
+                        <p class="stat-label">Dusun</p>
+                    </div>
+                </div>
+                <div class="col-lg col-md-4 col-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-building"></i></div>
+                        <h3 class="stat-number counter" data-target="19">0</h3>
+                        <p class="stat-label">RT / RW</p>
+                    </div>
+                </div>
+                <div class="col-lg col-md-4 col-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-mountain"></i></div>
+                        <h3 class="stat-number">
+                            <span class="counter" data-target="831">0</span>
+                            <small>Ha</small>
+                        </h3>
+                        <p class="stat-label">Luas Wilayah</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TENTANG DESA
+    ============================================= -->
+    <section id="tentang" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Mengenal Lebih Dekat</span>
+                <h2 class="section-title">Tentang Desa Cijagang</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row align-items-center g-5 mt-2">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-img-wrapper">
+                        <img src="assets/images/desa.jpeg"
+                            alt="Kantor Desa Cijagang" class="about-img" loading="lazy">
+                        <div class="about-img-badge">
+                            <i class="fas fa-award me-2"></i>Desa Terbaik 2024
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="about-content">
+                        <h3 class="about-heading">Sejarah Desa</h3>
+                        <p class="about-text">
+                            Desa Cijagang merupakan salah satu desa yang terletak di wilayah Kabupaten Pandeglang,
+                            Provinsi Banten.
+                            Desa ini memiliki sejarah panjang yang dimulai sejak masa kolonial Belanda. Dengan kekayaan
+                            alam yang melimpah
+                            dan budaya yang kental, Desa Cijagang terus berkembang menjadi desa yang maju dan mandiri.
+                        </p>
+                        <div class="visi-misi-wrapper mt-4">
+                            <div class="visi-box mb-3">
+                                <h4><i class="fas fa-eye me-2 text-success"></i>Visi</h4>
+                                <p>"Terwujudnya Desa Cijagang yang Maju, Mandiri, Sejahtera, dan Berbudaya"</p>
+                            </div>
+                            <div class="misi-box">
+                                <h4><i class="fas fa-bullseye me-2 text-success"></i>Misi</h4>
+                                <ol>
+                                    <li>Meningkatkan kualitas pelayanan publik kepada masyarakat</li>
+                                    <li>Mengembangkan potensi ekonomi lokal dan UMKM</li>
+                                    <li>Meningkatkan kualitas pendidikan dan kesehatan masyarakat</li>
+                                    <li>Membangun infrastruktur desa yang berkelanjutan</li>
+                                    <li>Melestarikan budaya dan kearifan lokal</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <a href="tentang.html" class="btn btn-primary-custom mt-4">
+                            <i class="fas fa-arrow-right me-2"></i>Selengkapnya
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SAMBUTAN KEPALA DESA
+    ============================================= -->
+    <section id="pemerintahan" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Pemerintahan Desa</span>
+                <h2 class="section-title">Sambutan Kepala Desa</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row align-items-center g-5 mt-2">
+                <div class="col-lg-4 text-center" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="kades-photo-wrapper">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&h=400&q=80"
+                            alt="Kepala Desa Cijagang" class="kades-photo" loading="lazy">
+                        <div class="kades-info">
+                            <h5>H. Ahmad Suryadi, S.Pd</h5>
+                            <span>Kepala Desa Cijagang</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="sambutan-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="sambutan-text">
+                            Assalamu'alaikum Warahmatullahi Wabarakatuh.
+                        </p>
+                        <p class="sambutan-text">
+                            Puji syukur kita panjatkan ke hadirat Allah SWT atas segala rahmat dan karunia-Nya.
+                            Dengan penuh rasa syukur, kami menyambut Anda di Website Resmi Desa Cijagang.
+                        </p>
+                        <p class="sambutan-text">
+                            Website ini hadir sebagai wujud komitmen kami dalam mewujudkan pemerintahan desa yang
+                            transparan,
+                            informatif, dan akuntabel. Melalui portal ini, kami berharap masyarakat dapat mengakses
+                            informasi tentang kegiatan pemerintahan, pembangunan, dan berbagai potensi yang dimiliki
+                            Desa Cijagang dengan mudah.
+                        </p>
+                        <p class="sambutan-text">
+                            Kami mengajak seluruh warga untuk bersama-sama membangun desa kita tercinta menuju
+                            Desa Cijagang yang lebih maju, mandiri, dan sejahtera.
+                        </p>
+                        <p class="sambutan-text fw-medium">
+                            Wassalamu'alaikum Warahmatullahi Wabarakatuh.
+                        </p>
+                        <div class="sambutan-signature mt-4">
+                            <p class="mb-0 fw-bold text-dark">H. Ahmad Suryadi, S.Pd</p>
+                            <small class="text-muted">Kepala Desa Cijagang</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         LAYANAN DESA
+    ============================================= -->
+    <!-- <section id="layanan" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Pelayanan Publik</span>
+                <h2 class="section-title">Layanan Desa</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc">Akses berbagai layanan administrasi dan informasi desa secara mudah dan cepat
+                </p>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-3 col-md-6 col-6" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="layanan-card">
+                        <div class="layanan-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h5>Surat Online</h5>
+                        <p>Pengajuan surat menyurat secara daring</p>
+                        <a href="#" class="layanan-link">Akses <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="layanan-card">
+                        <div class="layanan-icon icon-orange">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h5>Pengaduan</h5>
+                        <p>Sampaikan aspirasi dan pengaduan Anda</p>
+                        <a href="#" class="layanan-link">Akses <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="layanan-card">
+                        <div class="layanan-icon icon-blue">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h5>Bantuan Sosial</h5>
+                        <p>Informasi program bantuan sosial desa</p>
+                        <a href="#" class="layanan-link">Akses <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="layanan-card">
+                        <div class="layanan-icon icon-purple">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h5>Informasi Publik</h5>
+                        <p>Data dan informasi publik desa</p>
+                        <a href="#" class="layanan-link">Akses <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ============================================
+         POTENSI DESA
+    ============================================= -->
+    <section id="potensi" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Kekayaan Alam & Budaya</span>
+                <h2 class="section-title">Potensi Desa</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc">Ragam potensi unggulan Desa Cijagang yang menjadi kebanggaan masyarakat</p>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="potensi-card"
+                        data-type="potensi"
+                        data-title="Pertanian"
+                        data-badge="Unggulan"
+                        data-image="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1200&q=80"
+                        data-description="Lahan pertanian subur yang menghasilkan padi, jagung, dan palawija dengan kualitas baik serta menjadi tulang punggung ekonomi warga."
+                        data-highlights='["Lahan subur sepanjang musim","Hasil panen yang konsisten","Dukungan kelompok tani lokal"]'>
+                        <div class="potensi-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=600&q=80"
+                                alt="Pertanian" class="potensi-img" loading="lazy">
+                            <div class="potensi-overlay">
+                                <span class="potensi-badge-tag">Unggulan</span>
+                            </div>
+                        </div>
+                        <div class="potensi-body">
+                            <h5>Pertanian</h5>
+                            <p>Lahan pertanian subur dengan hasil padi, jagung, dan palawija yang melimpah sepanjang tahun.</p>
+                            <a href="#" class="btn-potensi detail-trigger">Lihat Detail <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="potensi-card"
+                        data-type="potensi"
+                        data-title="Perkebunan"
+                        data-badge="Andalan Desa"
+                        data-image="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=80"
+                        data-description="Perkebunan kelapa, kopi, dan cengkeh yang menjadi sumber pendapatan utama masyarakat dan memperkuat ekonomi desa."
+                        data-highlights='["Komoditas unggulan lokal","Pendapatan warga yang stabil","Potensi pengolahan produk desa"]'>
+                        <div class="potensi-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80"
+                                alt="Perkebunan" class="potensi-img" loading="lazy">
+                        </div>
+                        <div class="potensi-body">
+                            <h5>Perkebunan</h5>
+                            <p>Perkebunan kelapa, kopi, dan cengkeh yang menjadi sumber pendapatan utama warga desa.</p>
+                            <a href="#" class="btn-potensi detail-trigger">Lihat Detail <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="potensi-card"
+                        data-type="potensi"
+                        data-title="Pariwisata"
+                        data-badge="Berkembang"
+                        data-image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80"
+                        data-description="Wisata alam yang memadukan pegunungan, air terjun, dan hamparan sawah, menjadikan desa ini cocok untuk destinasi santai dan edukasi."
+                        data-highlights='["Pemandangan alam yang memukau","Potensi wisata keluarga","Dukungan pengembangan destinasi"]'>
+                        <div class="potensi-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=600&q=80"
+                                alt="Pariwisata" class="potensi-img" loading="lazy">
+                            <div class="potensi-overlay">
+                                <span class="potensi-badge-tag badge-blue">Berkembang</span>
+                            </div>
+                        </div>
+                        <div class="potensi-body">
+                            <h5>Pariwisata</h5>
+                            <p>Wisata alam dengan pemandangan pegunungan, air terjun, dan hamparan sawah yang memukau.</p>
+                            <a href="#" class="btn-potensi detail-trigger">Lihat Detail <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="potensi-card"
+                        data-type="potensi"
+                        data-title="UMKM"
+                        data-badge="Ekonomi Warga"
+                        data-image="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1200&q=80"
+                        data-description="Beragam usaha mikro, kecil, dan menengah yang tumbuh dari kreativitas warga dan menjadi penggerak ekonomi desa."
+                        data-highlights='["Produk lokal yang khas","Peluang kerja masyarakat","Kembangkan usaha berbasis budaya"]'>
+                        <div class="potensi-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=600&q=80"
+                                alt="UMKM" class="potensi-img" loading="lazy">
+                        </div>
+                        <div class="potensi-body">
+                            <h5>UMKM</h5>
+                            <p>Beragam usaha mikro, kecil, dan menengah yang menggerakkan perekonomian desa.</p>
+                            <a href="#" class="btn-potensi detail-trigger">Lihat Detail <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="potensi-card"
+                        data-type="potensi"
+                        data-title="Peternakan"
+                        data-badge="Ternak Berkualitas"
+                        data-image="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1200&q=80"
+                        data-description="Budidaya ternak sapi, kambing, dan unggas yang menjadi salah satu sumber ekonomi rumah tangga masyarakat."
+                        data-highlights='["Ternak lokal yang tahan cuaca","Pemanfaatan lahan yang optimal","Potensi pasar yang luas"]'>
+                        <div class="potensi-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=600&q=80"
+                                alt="Peternakan" class="potensi-img" loading="lazy">
+                        </div>
+                        <div class="potensi-body">
+                            <h5>Peternakan</h5>
+                            <p>Budidaya ternak sapi, kambing, dan unggas yang berkualitas tinggi dari desa.</p>
+                            <a href="#" class="btn-potensi detail-trigger">Lihat Detail <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="potensi-card"
+                        data-type="potensi"
+                        data-title="Perikanan"
+                        data-badge="Air Tawar"
+                        data-image="https://images.unsplash.com/photo-1545450660-3378a7f3a364?auto=format&fit=crop&w=1200&q=80"
+                        data-description="Budidaya ikan lele, nila, dan gurame di kolam-kolam desa yang semakin berkembang sebagai usaha mandiri."
+                        data-highlights='["Budidaya ikan air tawar","Ketersediaan kolam yang memadai","Peluang usaha rumah tangga"]'>
+                        <div class="potensi-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1545450660-3378a7f3a364?auto=format&fit=crop&w=600&q=80"
+                                alt="Perikanan" class="potensi-img" loading="lazy">
+                        </div>
+                        <div class="potensi-body">
+                            <h5>Perikanan</h5>
+                            <p>Perikanan air tawar dengan budidaya ikan lele, nila, dan gurame di kolam-kolam desa.</p>
+                            <a href="#" class="btn-potensi detail-trigger">Lihat Detail <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-4">
+                    <a href="potensi.html" class="btn btn-primary-custom">
+                        <i class="fas fa-list me-2"></i>Lihat Lainnya
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         WISATA DESA
+    ============================================= -->
+    <section id="wisata" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Destinasi Menarik</span>
+                <h2 class="section-title">Wisata Desa Cijagang</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc">Beberapa wisata alam dan spot menarik yang bisa Anda kunjungi di Desa Cijagang</p>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="potensi-card wisata-card"
+                        data-type="wisata"
+                        data-title="Air Terjun Curug"
+                        data-badge="Favorit"
+                        data-image="assets/images/cikajayaan.jpeg"
+                        data-description="Air terjun alami yang dikelilingi hutan hijau dan suasana sejuk, sangat cocok untuk refreshing bersama keluarga."
+                        data-highlights='["Suasana sejuk dan alami","Cocok untuk foto dan piknik","Jalur trekking ringan"]'>
+                        <div class="potensi-img-wrapper">
+                            <img src="assets/images/cikajayaan.jpeg"
+                                alt="Air Terjun Cijagang" class="potensi-img" loading="lazy">
+                            <div class="potensi-overlay">
+                                <span class="potensi-badge-tag">Favorit</span>
+                            </div>
+                        </div>
+                        <div class="potensi-body">
+                            <h5>Cikajayaan</h5>
+                            <p>Aliran air jernih yang mengalir di antara hutan pinus dan pegunungan, cocok untuk wisata santai.</p>
+                            <a href="#" class="btn-potensi detail-trigger">Lihat Detail <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="potensi-card wisata-card"
+                        data-type="wisata"
+                        data-title="Pemandangan Sawah"
+                        data-badge="Spot Foto"
+                        data-image="assets/images/cikahuripan.jpeg"
+                        data-description="Hamparan sawah hijau yang luas memberikan suasana tenang dan cocok untuk menikmati panorama desa dari dekat."
+                        data-highlights='["Pemandangan alami yang luas","Cocok untuk santai dan fotografi","Udara nyaman dan tenang"]'>
+                        <div class="potensi-img-wrapper">
+                            <img src="assets/images/cikahuripan.jpeg"
+                                alt="Pemandangan Sawah" class="potensi-img" loading="lazy">
+                        </div>
+                        <div class="potensi-body">
+                            <h5>Cikahuripan</h5>
+                            <p>Hamparan sawah hijau yang luas menjadi spot foto dan tempat bersantai bagi pengunjung.</p>
+                            <a href="#" class="btn-potensi detail-trigger">Lihat Detail <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="potensi-card wisata-card"
+                        data-type="wisata"
+                        data-title="Bukit Pantau"
+                        data-badge="Paling Dicari"
+                        data-image="assets/images/walpaper05.jpeg"
+                        data-description="Spot pandang yang menawarkan panorama alam Desa Cijagang dari ketinggian, sangat cocok untuk menikmati sunset."
+                        data-highlights='["View panorama yang luas","Cocok untuk sunset","Suasana dingin dan nyaman"]'>
+                        <div class="potensi-img-wrapper">
+                            <img src="assets/images/walpaper05.jpeg"
+                                alt="Bukit Pantau" class="potensi-img" loading="lazy">
+                            <div class="potensi-overlay">
+                                <span class="potensi-badge-tag badge-blue">Paling Dicari</span>
+                            </div>
+                        </div>
+                        <div class="potensi-body">
+                            <h5>Maqom Cikundul</h5>
+                            <p>Spot view yang menawarkan panorama alam Desa Cijagang dari ketinggian dengan suasana sejuk.</p>
+                            <a href="#" class="btn-potensi detail-trigger">Lihat Detail <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-4">
+                    <a href="wisata.html" class="btn btn-primary-custom">
+                        <i class="fas fa-list me-2"></i>Lihat Lainnya
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         OLEH-OLEH DESA
+    ============================================= -->
+    <section id="oleh-oleh" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Produk Khas Desa</span>
+                <h2 class="section-title">Oleh-Oleh Khas Cijagang</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc">Berbagai produk khas yang menjadi favorit para pengunjung dan warga yang ingin membawa pulang kesan Desa Cijagang</p>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="potensi-card oleh-card"
+                        data-type="oleh-oleh"
+                        data-layout="simple"
+                        data-title="Keripik Singkong"
+                        data-image="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80"
+                        data-description="Keripik singkong renyah dengan cita rasa gurih dan khas yang banyak digemari wisatawan.">
+                        <div class="potensi-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80"
+                                alt="Keripik Singkong" class="potensi-img" loading="lazy"
+                                onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22 viewBox=%220 0 600 400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%23f5f5f5%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2226%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 fill=%22%232e7d32%22%3EKeripik Singkong%3C/text%3E%3C/svg%3E';">
+                            <div class="potensi-overlay">
+                                <span class="potensi-badge-tag">Populer</span>
+                            </div>
+                        </div>
+                        <div class="potensi-body">
+                            <h5>Keripik Singkong</h5>
+                            <p>Keripik singkong renyah dengan cita rasa gurih dan khas yang banyak digemari wisatawan.</p>
+                            <a href="#" class="btn-potensi detail-trigger">Lihat Detail <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="potensi-card oleh-card"
+                        data-type="oleh-oleh"
+                        data-layout="simple"
+                        data-title="Dodol Khas Desa"
+                        data-image="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1200&q=80"
+                        data-description="Dodol dengan rasa manis legit yang dibuat secara tradisional dan cocok dijadikan buah tangan.">
+                        <div class="potensi-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80"
+                                alt="Dodol Desa" class="potensi-img" loading="lazy"
+                                onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22 viewBox=%220 0 600 400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%23f5f5f5%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2226%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 fill=%22%232e7d32%22%3EDodol Khas Desa%3C/text%3E%3C/svg%3E';">
+                        </div>
+                        <div class="potensi-body">
+                            <h5>Dodol Khas Desa</h5>
+                            <p>Dodol dengan rasa manis legit yang dibuat secara tradisional dan cocok dijadikan buah tangan.</p>
+                            <a href="#" class="btn-potensi detail-trigger">Lihat Detail <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="potensi-card oleh-card"
+                        data-type="oleh-oleh"
+                        data-layout="simple"
+                        data-title="Produk Makanan Tradisional"
+                        data-image="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+                        data-description="Berbagai makanan tradisional yang menyimpan cita rasa lokal dan menjadi favorit pembeli.">
+                        <div class="potensi-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80"
+                                alt="Makanan Khas" class="potensi-img" loading="lazy"
+                                onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22 viewBox=%220 0 600 400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%23f5f5f5%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2226%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 fill=%22%232e7d32%22%3EProduk Tradisional%3C/text%3E%3C/svg%3E';">
+                            <div class="potensi-overlay">
+                                <span class="potensi-badge-tag badge-blue">Best Seller</span>
+                            </div>
+                        </div>
+                        <div class="potensi-body">
+                            <h5>Produk Makanan Tradisional</h5>
+                            <p>Berbagai makanan tradisional yang menyimpan cita rasa lokal dan menjadi favorit pembeli.</p>
+                            <a href="#" class="btn-potensi detail-trigger">Lihat Detail <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-4">
+                    <a href="oleh-oleh.html" class="btn btn-primary-custom">
+                        <i class="fas fa-list me-2"></i>Lihat Lainnya
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         AGENDA KEGIATAN
+    ============================================= -->
+    <!-- <section id="agenda" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Jadwal & Kegiatan</span>
+                <h2 class="section-title">Agenda Kegiatan</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row mt-4 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    <i class="fas fa-calendar me-1"></i> 20 Juli 2026
+                                </div>
+                                <h5>Musyawarah Desa (Musdes)</h5>
+                                <p>Musyawarah perencanaan pembangunan desa tahun anggaran 2027 bersama seluruh perangkat
+                                    dan tokoh masyarakat.</p>
+                                <span class="timeline-location"><i class="fas fa-map-pin me-1"></i> Balai Desa
+                                    Cijagang</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    <i class="fas fa-calendar me-1"></i> 25 Juli 2026
+                                </div>
+                                <h5>Posyandu Balita & Lansia</h5>
+                                <p>Pelayanan kesehatan rutin untuk balita dan lansia di seluruh posyandu desa.</p>
+                                <span class="timeline-location"><i class="fas fa-map-pin me-1"></i> Posyandu Dusun
+                                    1-4</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    <i class="fas fa-calendar me-1"></i> 1 Agustus 2026
+                                </div>
+                                <h5>Gotong Royong Desa</h5>
+                                <p>Kegiatan gotong royong pembersihan lingkungan dan perbaikan jalan desa bersama warga.
+                                </p>
+                                <span class="timeline-location"><i class="fas fa-map-pin me-1"></i> Seluruh Wilayah
+                                    Desa</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    <i class="fas fa-calendar me-1"></i> 17 Agustus 2026
+                                </div>
+                                <h5>Peringatan HUT RI ke-81</h5>
+                                <p>Upacara bendera dan rangkaian lomba kemerdekaan untuk seluruh warga desa.</p>
+                                <span class="timeline-location"><i class="fas fa-map-pin me-1"></i> Lapangan Desa
+                                    Cijagang</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ============================================
+         BERITA TERBARU
+    ============================================= -->
+    <!-- <section id="berita" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Kabar Terkini</span>
+                <h2 class="section-title">Berita Terbaru</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <article class="berita-card">
+                        <div class="berita-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=600&q=80"
+                                alt="Berita 1" class="berita-img" loading="lazy">
+                            <span class="berita-category">Pembangunan</span>
+                        </div>
+                        <div class="berita-body">
+                            <div class="berita-meta">
+                                <span><i class="fas fa-calendar-alt me-1"></i> 15 Juli 2026</span>
+                                <span><i class="fas fa-user me-1"></i> Admin</span>
+                            </div>
+                            <h5 class="berita-title">Pembangunan Jalan Desa Tahap II Telah Dimulai</h5>
+                            <p class="berita-excerpt">Pemerintah Desa Cijagang memulai pembangunan jalan desa tahap
+                                kedua yang menghubungkan Dusun 2 dan Dusun 3...</p>
+                            <a href="#" class="btn-berita">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <article class="berita-card">
+                        <div class="berita-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=600&q=80"
+                                alt="Berita 2" class="berita-img" loading="lazy">
+                            <span class="berita-category cat-green">Pertanian</span>
+                        </div>
+                        <div class="berita-body">
+                            <div class="berita-meta">
+                                <span><i class="fas fa-calendar-alt me-1"></i> 10 Juli 2026</span>
+                                <span><i class="fas fa-user me-1"></i> Admin</span>
+                            </div>
+                            <h5 class="berita-title">Panen Raya Desa Cijagang Capai 50 Ton</h5>
+                            <p class="berita-excerpt">Musim panen tahun ini berhasil menghasilkan 50 ton gabah kering,
+                                meningkat 20% dibanding tahun sebelumnya...</p>
+                            <a href="#" class="btn-berita">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <article class="berita-card">
+                        <div class="berita-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&w=600&q=80"
+                                alt="Berita 3" class="berita-img" loading="lazy">
+                            <span class="berita-category cat-orange">Sosial</span>
+                        </div>
+                        <div class="berita-body">
+                            <div class="berita-meta">
+                                <span><i class="fas fa-calendar-alt me-1"></i> 5 Juli 2026</span>
+                                <span><i class="fas fa-user me-1"></i> Admin</span>
+                            </div>
+                            <h5 class="berita-title">KKN Mahasiswa Bantu Program Literasi Desa</h5>
+                            <p class="berita-excerpt">Tim KKN dari universitas mengadakan program literasi digital dan
+                                perpustakaan desa untuk anak-anak...</p>
+                            <a href="#" class="btn-berita">Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="#" class="btn btn-primary-custom">
+                    <i class="fas fa-newspaper me-2"></i>Lihat Semua Berita
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ============================================
+         GALERI DESA
+    ============================================= -->
+    <section id="galeri" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Dokumentasi Kegiatan</span>
+                <h2 class="section-title">Galeri Desa</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="galeri-masonry mt-4" data-aos="fade-up">
+                <div class="galeri-item galeri-tall">
+                    <a href="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80"
+                        class="gallery-trigger" data-title="Pemandangan Sawah Desa">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80"
+                            alt="Sawah Desa" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Pemandangan Sawah</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item">
+                    <a href="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80"
+                        class="gallery-trigger" data-title="Kegiatan Gotong Royong">
+                        <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=600&q=80"
+                            alt="Gotong Royong" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Gotong Royong</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item">
+                    <a href="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&w=1200&q=80"
+                        class="gallery-trigger" data-title="Kegiatan Warga">
+                        <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&w=600&q=80"
+                            alt="Kegiatan Warga" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Kegiatan Warga</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item">
+                    <a href="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&w=1200&q=80"
+                        class="gallery-trigger" data-title="Kegiatan Warga">
+                        <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&w=600&q=80"
+                            alt="Kegiatan Warga" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Kegiatan Warga</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item galeri-wide">
+                    <a href="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80"
+                        class="gallery-trigger" data-title="Pemandangan Alam Desa">
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=80"
+                            alt="Alam Desa" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Pemandangan Alam</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item">
+                    <a href="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=80"
+                        class="gallery-trigger" data-title="Perkebunan Desa">
+                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80"
+                            alt="Perkebunan" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Perkebunan Desa</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item galeri-tall">
+                    <a href="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80"
+                        class="gallery-trigger" data-title="Wisata Alam">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=600&q=80"
+                            alt="Wisata Alam" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Wisata Alam</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item">
+                    <a href="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1200&q=80"
+                        class="gallery-trigger" data-title="Pertanian Padi">
+                        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=600&q=80"
+                            alt="Pertanian Padi" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Pertanian Padi</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item">
+                    <a href="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
+                        class="gallery-trigger" data-title="Pegunungan">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80"
+                            alt="Pegunungan" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Pegunungan</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item">
+                    <a href="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
+                        class="gallery-trigger" data-title="Pegunungan">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80"
+                            alt="Pegunungan" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Pegunungan</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item">
+                    <a href="assets/images/foto1.jpeg"
+                        class="gallery-trigger" data-title="Pegunungan">
+                        <img src="assets/images/foto1.jpeg"
+                            alt="Pegunungan" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Pegunungan</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item">
+                    <a href="assets/images/foto2.jpeg"
+                        class="gallery-trigger" data-title="Pegunungan">
+                        <img src="assets/images/foto2.jpeg"
+                            alt="Pegunungan" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Pegunungan</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item">
+                    <a href="assets/images/foto3.jpeg"
+                        class="gallery-trigger" data-title="Pegunungan">
+                        <img src="assets/images/foto3.jpeg"
+                            alt="Pegunungan" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Pegunungan</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item">
+                    <a href="assets/images/foto4.jpeg"
+                        class="gallery-trigger" data-title="Pegunungan">
+                        <img src="assets/images/foto4.jpeg"
+                            alt="Pegunungan" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Pegunungan</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item">
+                    <a href="assets/images/foto5.jpeg"
+                        class="gallery-trigger" data-title="Pegunungan">
+                        <img src="assets/images/foto5.jpeg"
+                            alt="Pegunungan" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Pegunungan</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item">
+                    <a href="assets/images/foto10.jpeg"
+                        class="gallery-trigger" data-title="Foto 10">
+                        <img src="assets/images/foto10.jpeg"
+                            alt="Foto 10" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Foto 10</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galeri-item">
+                    <a href="assets/images/walpaper2.jpeg"
+                        class="gallery-trigger" data-title="Foto 10">
+                        <img src="assets/images/walpaper2.jpeg"
+                            alt="Foto 10" loading="lazy">
+                        <div class="galeri-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Foto 10</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-4" data-aos="fade-up">
+                <a href="galeri.html" class="btn btn-primary-custom">
+                    <i class="fas fa-images me-2"></i>Lihat Semua Foto
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONI WARGA
+    ============================================= -->
+    <!-- <section id="testimoni" class="section-padding bg-gradient-green">
+        <div class="container">
+            <div class="section-header text-white" data-aos="fade-up">
+                <span class="section-badge badge-white">Suara Warga</span>
+                <h2 class="section-title text-white">Testimoni Masyarakat</h2>
+                <div class="section-divider divider-white"></div>
+            </div>
+            <div class="testimoni-slider mt-4" data-aos="fade-up">
+                <div class="testimoni-track" id="testimoniTrack">
+                    <div class="testimoni-card">
+                        <div class="testimoni-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimoni-text">"Pelayanan di kantor desa sekarang sudah jauh lebih baik. Proses
+                            pembuatan surat lebih cepat dan petugas sangat ramah."</p>
+                        <div class="testimoni-author">
+                            <div class="testimoni-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h6>Bapak Surya</h6>
+                                <small>Warga Dusun 1</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimoni-card">
+                        <div class="testimoni-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimoni-text">"Program bantuan sosial dari desa sangat membantu keluarga kami.
+                            Semoga terus dilanjutkan untuk masyarakat yang membutuhkan."</p>
+                        <div class="testimoni-author">
+                            <div class="testimoni-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h6>Ibu Siti Aminah</h6>
+                                <small>Warga Dusun 2</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimoni-card">
+                        <div class="testimoni-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimoni-text">"Pembangunan desa semakin pesat. Jalan sudah bagus, penerangan jalan
+                            sudah merata. Terima kasih Pak Kepala Desa!"</p>
+                        <div class="testimoni-author">
+                            <div class="testimoni-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h6>Bapak Dede</h6>
+                                <small>Warga Dusun 3</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimoni-card">
+                        <div class="testimoni-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimoni-text">"Adanya website desa ini sangat membantu kami untuk mendapatkan
+                            informasi terbaru tentang kegiatan dan program desa."</p>
+                        <div class="testimoni-author">
+                            <div class="testimoni-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h6>Ibu Ratna</h6>
+                                <small>Warga Dusun 4</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimoni-controls">
+                    <button class="testimoni-btn" id="prevTestimoni" aria-label="Previous">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimoni-dots" id="testimoniDots"></div>
+                    <button class="testimoni-btn" id="nextTestimoni" aria-label="Next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ============================================
+         LOKASI
+    ============================================= -->
+    <section id="kontak" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Lokasi</span>
+                <h2 class="section-title">Lokasi Desa Cijagang</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row g-5 mt-2 justify-content-center">
+                <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="map-wrapper mx-auto">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31666.18!2d105.9!3d-6.65!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMzknMDAuMCJTIDEwNcKwNTQnMDAuMCJF!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                            width="100%" height="400" style="border:0; border-radius: 16px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Peta Lokasi Desa Cijagang">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+    ============================================= -->
+    <footer id="footer" class="footer-section">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-brand">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="assets/images/logo-desa.png" alt="Logo Desa Cijagang" width="50" height="50"
+                                    class="footer-logo">
+                                <div class="ms-3">
+                                    <h4 class="mb-0 text-white">Desa Cijagang</h4>
+                                    <small class="text-white-50">Kabupaten Pandeglang, Banten</small>
+                                </div>
+                            </div>
+                            <p class="footer-desc">
+                                Website resmi Desa Cijagang sebagai media informasi, transparansi,
+                                dan pelayanan publik bagi seluruh masyarakat desa.
+                            </p>
+                            <div class="footer-social">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="index.html#tentang">Profil Desa</a></li>
+                            <li><a href="index.html#pemerintahan">Pemerintahan</a></li>
+                            <li><a href="index.html#potensi">Potensi Desa</a></li>
+                            <li><a href="index.html#wisata">Wisata</a></li>
+                            <li><a href="index.html#oleh-oleh">Oleh-Oleh</a></li>
+                            <li><a href="index.html#berita">Berita</a></li>
+                            <li><a href="index.html#galeri">Galeri</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <h5 class="footer-title">Layanan</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Surat Online</a></li>
+                            <li><a href="#">Pengaduan</a></li>
+                            <li><a href="#">Bantuan Sosial</a></li>
+                            <li><a href="#">Informasi Publik</a></li>
+                            <li><a href="#">Data Penduduk</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title">Kontak</h5>
+                        <ul class="footer-contact">
+                            <li>
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                Jl. Raya Cijagang No. 01, Pandeglang
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt me-2"></i>
+                                (0253) 123-4567
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope me-2"></i>
+                                desa.cijagang@gmail.com
+                            </li>
+                        </ul>
+                        <!-- Logo KKN & Universitas -->
+                        <div class="footer-partner mt-3">
+                            <p class="text-white-50 mb-2"><small>Didukung oleh:</small></p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="partner-badge">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <small>KKN 2026</small>
+                                </div>
+                                <div class="partner-badge">
+                                    <i class="fas fa-university"></i>
+                                    <small>Universitas</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2026 Desa Cijagang. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0">Dibuat dengan <i class="fas fa-heart text-danger"></i> oleh Tim KKN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         BACK TO TOP BUTTON
+    ============================================= -->
+    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ============================================
+         FLOATING WHATSAPP
+    ============================================= -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Desa%20Cijagang" target="_blank" rel="noopener noreferrer"
+        class="floating-wa" aria-label="Chat WhatsApp" id="floatingWA">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-tooltip">Chat Kami</span>
+    </a>
+
+    <!-- ============================================
+         DETAIL MODAL
+    ============================================= -->
+    <div class="detail-modal" id="detailModal" aria-hidden="true">
+        <div class="detail-modal-backdrop" data-close-detail></div>
+        <div class="detail-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="detailModalTitle">
+            <button class="detail-modal-close" type="button" aria-label="Tutup" data-close-detail>
+                <i class="fas fa-times"></i>
+            </button>
+            <img class="detail-modal-image" id="detailModalImage" src="" alt="">
+            <div class="detail-modal-content">
+                <span class="detail-modal-badge" id="detailModalBadge">Detail</span>
+                <h3 class="detail-modal-title" id="detailModalTitle">Judul</h3>
+                <p class="detail-modal-description" id="detailModalDescription"></p>
+                <ul class="detail-modal-highlights" id="detailModalHighlights"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         GALERI MODAL
+    ============================================= -->
+    <div class="gallery-modal" id="galleryModal" aria-hidden="true">
+        <div class="gallery-modal-backdrop" data-close-modal></div>
+        <div class="gallery-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="galleryModalTitle">
+            <button class="gallery-modal-close" type="button" aria-label="Tutup" data-close-modal>
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="galleryModalImage" src="" alt="">
+            <div class="gallery-modal-caption" id="galleryModalTitle"></div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         SCRIPTS
+    ============================================= -->
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
