@@ -42,6 +42,12 @@
                     </a>
                 </div>
                 <div class="galeri-item">
+                    <a href="assets/video/contoh.mp4" class="gallery-trigger" data-title="Video Kegiatan Desa" data-type="video" data-poster="assets/images/foto1.jpeg">
+                        <img src="assets/images/makanan.png" alt="Video Kegiatan Desa" loading="lazy">
+                        <div class="galeri-overlay"><i class="fas fa-play-circle"></i><span>Video Kegiatan</span></div>
+                    </a>
+                </div>
+                <div class="galeri-item">
                     <a href="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80" class="gallery-trigger" data-title="Kegiatan Gotong Royong">
                         <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=600&q=80" alt="Gotong Royong" loading="lazy">
                         <div class="galeri-overlay"><i class="fas fa-search-plus"></i><span>Gotong Royong</span></div>
@@ -220,6 +226,7 @@
                 <i class="fas fa-times"></i>
             </button>
             <img id="galleryModalImage" src="" alt="">
+            <video id="galleryModalVideo" controls playsinline preload="metadata" poster="" hidden></video>
             <div class="gallery-modal-caption" id="galleryModalTitle"></div>
         </div>
     </div>

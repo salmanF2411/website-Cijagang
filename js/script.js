@@ -199,31 +199,70 @@ document.addEventListener('DOMContentLoaded', function () {
     // ============================================
     const galleryModal = document.getElementById('galleryModal');
     const galleryModalImage = document.getElementById('galleryModalImage');
+    const galleryModalVideo = document.getElementById('galleryModalVideo');
     const galleryModalTitle = document.getElementById('galleryModalTitle');
     const galleryTriggers = document.querySelectorAll('.gallery-trigger');
 
     function openGalleryModal(trigger) {
         if (!galleryModal || !galleryModalImage || !galleryModalTitle) return;
 
-        const imageUrl = trigger.getAttribute('href');
+        const mediaUrl = trigger.getAttribute('href');
         const title = trigger.getAttribute('data-title') || 'Foto Galeri';
+        const mediaType = trigger.getAttribute('data-type') || 'image';
+        const posterUrl = trigger.getAttribute('data-poster') || '';
 
-        if (!imageUrl) return;
+        if (!mediaUrl) return;
 
-        galleryModalImage.src = imageUrl;
-        galleryModalImage.alt = title;
         galleryModalTitle.textContent = title;
         galleryModal.classList.add('is-open');
         galleryModal.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
+
+        if (mediaType === 'video') {
+            galleryModal.classList.add('video-active');
+            galleryModalImage.hidden = true;
+            if (galleryModalVideo) {
+                galleryModalVideo.hidden = false;
+                galleryModalVideo.setAttribute('poster', posterUrl);
+                galleryModalVideo.src = mediaUrl;
+                galleryModalVideo.load();
+                galleryModalVideo.play().catch(function () {});
+            }
+        } else {
+            galleryModal.classList.remove('video-active');
+            if (galleryModalVideo) {
+                galleryModalVideo.pause();
+                galleryModalVideo.currentTime = 0;
+                galleryModalVideo.removeAttribute('src');
+                galleryModalVideo.load();
+                galleryModalVideo.hidden = true;
+            }
+            galleryModalImage.hidden = false;
+            galleryModalImage.src = mediaUrl;
+            galleryModalImage.alt = title;
+        }
     }
 
     function closeGalleryModal() {
         if (!galleryModal) return;
 
-        galleryModal.classList.remove('is-open');
+        galleryModal.classList.remove('is-open', 'video-active');
         galleryModal.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
+
+        if (galleryModalVideo) {
+            galleryModalVideo.pause();
+            galleryModalVideo.currentTime = 0;
+            galleryModalVideo.removeAttribute('src');
+            galleryModalVideo.load();
+            galleryModalVideo.hidden = true;
+        }
+
+        if (galleryModalImage) {
+            galleryModalImage.hidden = false;
+            galleryModalImage.removeAttribute('src');
+            galleryModalImage.alt = '';
+        }
     }
 
     if (galleryModal && galleryModalImage && galleryModalTitle) {
